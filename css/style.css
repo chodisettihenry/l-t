@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  
+  
+ 
+  background-color: #fff;
+  color: #000;
+}
+
+.nav-links a {
+  color: #000;
+  margin-top: -300px;
+  
+  margin-left: -20px;
+  font-size: 16px;
+
+}
+
+.logo {
+  font-size: 32px;
+}
+
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+
+.services {
+  position: relative; 
+}
+
+.dropdown {
+  background-color: #0370c0;
+  padding: 1em 0;
+  position: absolute; 
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #0370c0;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+
+input[type=checkbox] {
+  display: none;
+} 
+
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+
+@media (max-width: 768px) {
+ .menu {
+    display:none;
+    position: absolute;
+    background-color:#fff;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color:#fff;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: #0370c0;
+  }
+}
+
+
+
+
+.navbar1 {
+  width: 150%;
+  background-color: #1c5f8f;
+  
+  position: sticky;
+  top: 0;
+  z-index: 5;
+ 
+  height: 65px;
+  
+}
+
+
+.navbar1 a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.navbar1 a:hover {
+  background-color: #0370c0;
+  color: #fff;
+  text-decoration: none;
+}
+#me:hover {
+  background-color: #1c5f8f;
+
+}
+.dropdownme {
+  float:left;
+  overflow: hidden;
+}
+.dropdownme .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; 
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.navbar1 a:hover, .dropdownme:hover .dropbtn {
+  background-color: #0370c0;
+}
+.dropdown-content a {
+  float: none;
+  color: #0370c0;
+  padding-top: -30px;
+  padding-right: 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdownme:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: #0370c0;
+  
+}
+
+.container {
+  position: relative;
+}
+.text-block {
+  position: absolute;
+  margin-top: -180px;
+  margin-left: 370px;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:bold;
+  background-color: #FFf;
+  color: #000;
+ padding: 20px;
+}
+.text-block1 {
+  position: absolute;
+  margin-top: -200px;
+  margin-left: 70px;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:bold;
+  background-color: #FFf;
+  color: #000;
+ padding: 20px;
+}
+.text-block2 {
+  position: absolute;
+  margin-top: -380px;
+  margin-left: 250px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 300;
+  background-color: #FFf;
+  color: #000;
+ padding: 30px;
+ line-height: 3.4rem;
+}
+.text-block3 {
+  position: absolute;
+  
+  
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 300;
+  background-color: #FFf;
+  color: #000;
+ padding: 30px;
+ line-height: 3.4rem;
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .navbar1 a {
+    float: none;
+    display: block;
+  }
+}
